@@ -1,0 +1,14 @@
+# Explicit submission budget (8 MiB maximum):
+# /src/** 384 KiB; /public/** 768 KiB; /dist/** 2 MiB;
+# manifests, lockfile and frontend config 256 KiB; docs and artifacts 256 KiB.
+# /test/engine.test.ts 32 KiB; total allocated: 3.657 MiB. Runtime assets and the complete dist export are included.
+**/node_modules/
+**/.vite/
+**/.cache/
+**/.npm/
+**/.playwright/
+**/coverage/
+**/*.tsbuildinfo
+test/scratch/
+# Tool-generated browser screenshots: explicit submission budget 0 bytes.
+.playwright-mcp/
